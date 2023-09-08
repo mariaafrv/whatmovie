@@ -8,7 +8,7 @@ class NetworkPopularMovies {
       "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2OWVkMmEwN2FmOTUyYzkyYTQzYzk0MDRhOTg1MjQxMyIsInN1YiI6IjY0ZDc3OGM2ZDEwMGI2MDEzOTVkMzExOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.FD2AEA3Yot7D3yGiox3pHlq4xirhGA9ZWRXERXrCyFc"
     ]
     
-    let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/search/movie?query=star%20wars&include_adult=false&language=en-US&page=1")! as URL,
+    let request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1")! as URL,
                                             cachePolicy: .useProtocolCachePolicy,
                                         timeoutInterval: 10.0)
     request.httpMethod = "GET"
